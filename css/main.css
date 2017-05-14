@@ -1,0 +1,201 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+a {
+    color:#0078ff;
+}
+
+#sphere {
+    margin:0;
+    margin-bottom: -5px;
+}
+
+#sphere nav {
+    position: absolute;
+    right: 10px;
+}
+
+#sphere nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#sphere nav li:hover {
+    background-color: #333;
+}
+
+#sphere nav li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float:left;
+}
+
+#sphere nav li a {
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    color:white;
+    left: 15px;
+    top: -5px;
+}
+
+#learnmore {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#learnmore:hover {
+    text-decoration: underline;
+}
+
+#svgbow {
+    margin:0;
+    margin-left: -1px;
+}
+
+#header {
+    padding:0;
+    margin:0;
+}
+
+.section-title-rule {
+    border-top: 2px solid white;
+    width: 100px;
+    margin: 10px auto 30px;
+}
+
+#intro {
+    color: white;
+    margin-top: -35px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.dark {
+    /*background: grey;
+    padding-bottom: 20px;*/
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url('../images/forest.jpg');
+    background-size: cover;
+}
+
+.work {
+    margin-top: -150px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    /*background: url('http://data.freehdw.com/stratosphere-photo-background.jpg');*/
+/*     background: url('http://cdn.wallpapersafari.com/71/50/E7OmJ6.jpg');
+*/    background: url('../images/materialdark.jpg');
+    background-size: cover;
+}
+
+#strip {
+    position: relative;
+    width: 530px;
+    height: 400px;
+}
+
+.strip {
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 70%;
+    background-image: url("../images/wallpapershowcase.png");
+    background-position: center 0px;
+    background-repeat: repeat-y;
+}
+
+#topimg {
+    width: 450px;
+    position: absolute;
+    z-index: 2;
+    top: 70px;
+    left: 55px;
+    border-radius: 5px;
+}
+
+.contact {
+   background:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),  url('../images/newyork.jpg');
+    background-position: top;
+    padding-bottom: 100px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    #intro {
+        margin-top:-20px;
+    }
+    #strip {
+        width:400px;
+    }
+    .strip {
+        left: 30%;
+        max-width: 80%;
+    }
+    #topimg {
+        width: 70%;
+        left: 43%;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #strip {
+        right: 70px;
+    }
+    #topimg {
+        width: 60%;
+        left: 23%;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 420) {
+    #strip {
+        right: 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #intro {
+        margin-top: -5px;
+    }
+    .showcase {
+        margin-top: 40px;
+    }
+        #strip {
+        right: 70px;
+    }
+    #topimg {
+        width: 60%;
+        left: 23%;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #intro {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #workleft {
+        margin-top: 60px;
+    }
+}

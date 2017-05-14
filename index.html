@@ -1,1 +1,122 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Frits.tech</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- fa icons -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- our css -->
+		<link rel="stylesheet" href="css/main.css">
+		<!-- check if mobile -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+		<script src="/js/mobile.js"></script>
+	</head>
+
+	<body>
+		<!--BEGIN 3D SPHERE-->
+        <div id="sphere">
+			<h3 id="logo">Frits.tech</h3>
+			<nav>
+				<ul>
+				<li id="aboutlink">About</li>
+				<li id="worklink">Work</li>
+				<li id="contactlink">Contact</li>
+				</ul>
+			</nav>
+			<p id="learnmore">Learn more <i class="fa fa-chevron-down"></i></p>
+		</div>
+		<script src="/js/three.js"></script>
+        <script src="/js/three-text2d.min.js"></script>
+		<script src="js/Projector.js"></script>
+		<script src="js/CanvasRenderer.js"></script>
+        <script src="js/sphere.js"></script>
+		<script src="js/3dtext.js"></script>
+		<!--END 3D SPHERE-->
+
+		<section class="dark">
+
+		    <svg style="margin-top: -3px;" id="svgbow" class="arc-svg" viewBox="0 0 1440 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		        <g stroke="none" stroke-width="1" fill="black" fill-rule="evenodd">
+		            <path d="M1440,69.0315425 L1440,0 L0,0 L0,69.0315425 C233.264983,25.0227325 473.943868,2 720,2 C966.056132,2 1206.73502,25.0227325 1440,69.0315425 Z" id="Combined-Shape"></path>
+		        </g>
+		    </svg>
+			
+			<h1 id="intro">About me</h1>
+			<hr class="section-title-rule">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<h2 style="color: white;">- I'm Frits, I create Web sites and Apps</h2>
+						<p style="margin-top: 20px; color: white; font-size: 15px;">Thank you for visiting my site, as you might've guessed I'm a web developer. Who lives in the Netherlands. I have a hobby and passion about creating websites. I have been doing this for over 3 years now and I have over 2 years of experience with php where I used frameworks like Laravel, or Slim3. I've also developed several websites and if you're interested, feel free to visit some of them below!</p>
+					</div>
+					<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+						<h2 style="color: white;">- Some of my skills</h2>
+						<p style="color: white; font-size: 16px; margin-top: 20px;"><strong>Back-end</strong></p>
+						<p style="color: white;">Php, Nodejs, Laravel, Api's, Slim3</p>
+						<p style="color: white; font-size: 16px; margin-top: 20px;"><strong>Front-end</strong></p>
+						<p style="color: white;">CSS3, Html, Javascript, Jquery</p>
+						<p style="color: white; font-size: 16px; margin-top: 20px;"><strong>Cloud</strong></p>
+						<p style="color: white;">AWS, Digitalocean, Unix</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h2 style="color: white;">- Get social</h2>
+						<a href="https://www.linkedin.com/in/frits-van-turnhout-6011a2a5" target="_blank"><p style="color: white; margin-top: 20px;">Linked <i class="fa fa-linkedin"></i></p></a>
+						<a href="https://twitter.com/frits374" target="_blank"><p style="color: white">Twitter <i class="fa fa-twitter"></i></p></a>
+						<a href="mailto:contact@frits.tech"><p style="color: white">E-Mail <i class="fa fa-envelope-o"></i></p></a>
+						<a href="https://github.com/fritsvt" target="_blank"><p style="color: white">Github <i class="fa fa-github"></i></p></a>
+					</div>
+				</div>
+			</div>
+
+			<svg style="margin-top: 50px;" height="150" width="100%" style="margin-top: -300px;">
+		  		<polygon points="-10,0 3000,-100 -1,105" style="fill:#111111; stroke-width:1" />
+			</svg>
+
+		</section>
+
+		<section class="work">
+
+			<div class="container">
+				<div class="row">
+					<div id="workleft" class="col-md-5 col-sm-6">
+						<h1 style="color: white;">Some of my creations</h1>
+						<p style="color: white;">In the past years I've worked on several projects. some of the recent ones I've worked on are: </p>
+						<a style="color: white;" href="http://pasteit.v77.nl" target="_blank">- Pasteit</a><br>
+						<a style="color: white;" href="http://pasteit.v77.nl" target="_blank">- Lingoset</a><br>
+						<a style="color: white;" href="http://pasteit.v77.nl" target="_blank">- Zermelo Dashboard</a>
+					</div>
+					<div class="col-md-6 pull-right col-sm-6">
+						<div class="showcase">
+							<img id="topimg" src="/images/pasteit.jpg" alt="">
+							<div id="strip">
+								<div class="strip"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<section class="contact">
+			<svg style="margin-top: 0px;" height="110" width="100%" style="margin-top: -300px;">
+		  		<polygon points="-10,-500 7000,500 -1,10" style="fill:#111111; stroke-width:1" />
+			</svg>
+			<h1 style="color: white; text-align: center;">Have a question or interested in my work?</h1>
+			<h2 style="color: white; text-align: center;">Send me an email at <a href="mail:contact@frits.tech"></a>Contact@frits.tech</h2>
+		</section>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>
