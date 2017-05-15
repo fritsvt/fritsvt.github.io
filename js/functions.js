@@ -27,6 +27,15 @@ $(document).ready(function() {
 	        scrollTop: $(".contact").offset().top -10 
 	    }, 700);
 	}
+
+	// if (mobile) {
+	// 	if (window.DeviceMotionEvent==undefined) {
+	// 		var gyro = 0;
+	// 	}
+	// 	else {
+	// 		alert("we got a gyro");
+	// 	}
+	// }
 });
 
 $(window).scroll(function () {

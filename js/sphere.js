@@ -93,8 +93,21 @@ for (var i = 0; i < 50; i++) { //was 150
     //
     mobile = checkmobile();
     initwidth = window.innerWidth;
+    if (mobile) {
+        if (window.DeviceMotionEvent==undefined) {
+            var gyro = 0;
+        }
+        else {
+            window.ondevicemotion = function(event) {
+                mouseX = event.accelerationIncludingGravity.x * 100;
+                mouseY = event.accelerationIncludingGravity.y * 100;
+            }
+        }
+    }
+
 
     window.addEventListener( 'resize', onWindowResize, false ); 
+
 
 }
 
@@ -136,14 +149,15 @@ function onDocumentTouchStart( event ) {
 }
 
 function onDocumentTouchMove( event ) {
+    if (!mobile) {
+        if ( event.touches.length == 1 ) {
 
-    if ( event.touches.length == 1 ) {
+            event.preventDefault();
 
-        event.preventDefault();
+            mouseX = event.touches[ 0 ].pageX - windowHalfX;
+            mouseY = event.touches[ 0 ].pageY - windowHalfY;
 
-        mouseX = event.touches[ 0 ].pageX - windowHalfX;
-        mouseY = event.touches[ 0 ].pageY - windowHalfY;
-
+        }
     }
 
 }
