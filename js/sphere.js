@@ -98,10 +98,10 @@ for (var i = 0; i < 50; i++) { //was 150
             var gyro = 0;
         }
         else {
-                window.ondevicemotion = function(event) {
-        mouseX = event.accelerationIncludingGravity.x * 100;
-        mouseY = event.accelerationIncludingGravity.y * 100;
-    }
+            window.ondevicemotion = function(event) {
+                mouseX = event.accelerationIncludingGravity.x * 100;
+                mouseY = event.accelerationIncludingGravity.y * 100;
+            }
         }
     }
 
